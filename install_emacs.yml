@@ -1,0 +1,9 @@
+---
+ - name: Install emacs on servers
+   hosts: all
+   tasks:
+   - name: Install emacs
+     yum:
+       name: emacs
+       state: latest
+       
