@@ -1,0 +1,10 @@
+
+---
+ - name: uninstall emacs on servers
+   hosts: all
+   tasks:
+   - name: uninstall emacs
+     yum:
+       name: emacs
+       state: absent
+       
